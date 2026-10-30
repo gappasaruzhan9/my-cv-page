@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ғаппас Аружан | Жеке портфолио</title>
+<style>
+:root {
+  --navy: #12263a;
+  --teal: #087f8c;
+  --light: #f3f7fa;
+  --white: #ffffff;
+  --muted: #627487;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--navy);
+  background: var(--light);
+  line-height: 1.75;
+}
+nav {
+  background: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  box-shadow: 0 2px 15px #12263a12;
+}
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--teal);
+}
+nav a {
+  text-decoration: none;
+  color: var(--navy);
+  margin-left: 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+nav a:hover { color: var(--teal); }
+.hero {
+  background: linear-gradient(125deg,#12263a,#155e75,#087f8c);
+  color: white;
+  padding: 100px 8%;
+}
+.hero-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a4e8e6;
+  font-size: 13px;
+  font-weight: 700;
+}
+h1 {
+  font-size: clamp(34px,5vw,62px);
+  line-height: 1.2;
+  margin: 20px 0;
+}
+.hero p {
+  max-width: 750px;
+  font-size: 18px;
+  color: #e1eef3;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.hero-tags span {
+  border: 1px solid #ffffff66;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 22px;
+}
+.section-title {
+  font-size: 30px;
+  margin: 0 0 30px;
+}
+.section-title:after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 4px;
+  background: var(--teal);
+  border-radius: 5px;
+  margin-top: 12px;
+}
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px #12263a0c;
+  margin-bottom: 20px;
+}
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+.date {
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 14px;
+}
+.subtitle { color: var(--muted); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px;
+}
+.skill {
+  background: white;
+  border-radius: 15px;
+  padding: 24px;
+  border-left: 4px solid var(--teal);
+  box-shadow: 0 4px 18px #12263a0a;
+}
+.skill h3 { margin: 0 0 7px; }
+.skill p { margin: 0; color: var(--muted); }
+ul { padding-left: 22px; }
+li { margin-bottom: 10px; }
+.highlight {
+  background: #e5f5f5;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 4px solid var(--teal);
+}
+footer {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+footer p { color: #b7c9d7; }
+@media(max-width:650px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: 70px 22px; }
+  .card { padding: 24px; }
+  nav { padding: 16px 22px; }
+  nav a { margin: 0 12px 0 0; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">ARUZHAN | CV</div>
+  <div>
+    <a href="#about">Мен туралы</a>
+    <a href="#education">Білім</a>
+    <a href="#experience">Тәжірибе</a>
+    <a href="#skills">Дағдылар</a>
+    <a href="#contact">Байланыс</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Жеке портфолио · 2026</div>
+    <h1>Ғаппас Аружан<br>Ғабдулмұталапқызы</h1>
+    <p>
+      Эколог-жобалаушы | География магистранты |
+      Геоақпараттық технологиялар
+    </p>
+    <p>
+      Экологиялық жобалау, қоршаған ортаны қорғау,
+      картография және кеңістіктік талдау бағытында
+      кәсіби дамып келе жатқан маман.
+    </p>
+    <div class="hero-tags">
+      <span>📍 Астана, Қазақстан</span>
+      <span>Экологиялық жобалау</span>
+      <span>ArcGIS · QGIS · GEE</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="about" class="container">
+  <h2 class="section-title">Мен туралы</h2>
+  <div class="card">
+    <p>
+      Мен – Ғаппас Аружан Ғабдулмұталапқызы.
+      Астана қаласында тұрамын.
+      Л.Н. Гумилев атындағы Еуразия ұлттық
+      университетінің география бағыты бойынша
+      магистратурасының 2-курс студентімін.
+    </p>
+    <p>
+      Қазіргі уақытта эколог-жобалаушы болып
+      жұмыс істеймін. Кәсіби қызметім экологиялық
+      жобалық құжаттамаларды әзірлеу,
+      сараптамалық рәсімдерді сүйемелдеу және
+      қоршаған ортаны қорғау мәселелерімен байланысты.
+    </p>
+    <p>
+      География саласындағы академиялық білімімді
+      экологиялық жобалау тәжірибесімен және
+      геоақпараттық технологиялармен ұштастырамын.
+      Кеңістіктік деректерді талдау, цифрлық карталар
+      дайындау және спутниктік ақпаратпен жұмыс істеу
+      бағыттарына ерекше қызығушылық танытамын.
+    </p>
+  </div>
+</section>
+
+<section id="education" class="container">
+  <h2 class="section-title">Білімім</h2>
+
+  <div class="card">
+    <div class="date">2025–2027</div>
+    <h3>Магистратура</h3>
+    <p><strong>
+      Л.Н. Гумилев атындағы Еуразия ұлттық университеті
+    </strong></p>
+    <p class="subtitle">География бағыты · 2-курс</p>
+    <p>
+      Географиялық зерттеулер, геоақпараттық жүйелер,
+      кеңістіктік талдау, табиғи-аумақтық кешендерді
+      зерттеу және ғылыми-зерттеу әдістері бойынша
+      білімімді тереңдетудемін.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="date">2021–2025</div>
+    <h3>Бакалавриат</h3>
+    <p><strong>
+      Л.Н. Гумилев атындағы Еуразия ұлттық университеті
+    </strong></p>
+    <p class="subtitle">География бакалавры</p>
+    <p>
+      Физикалық және әлеуметтік-экономикалық география,
+      картография, геоақпараттық жүйелер,
+      табиғатты пайдалану және географиялық
+      зерттеу әдістері бойынша жоғары білім алдым.
+    </p>
+  </div>
+</section>
+
+<section id="experience" class="container">
+  <h2 class="section-title">Кәсіби тәжірибем</h2>
+
+  <div class="card">
+    <div class="date">Қазіргі уақыт</div>
+    <h3>Эколог-жобалаушы</h3>
+    <p>
+      Экологиялық жобалау саласында құрылыс
+      және өзге де нысандарға қатысты жобалық
+      құжаттамаларды дайындауға және сараптамалық
+      рәсімдерді сүйемелдеуге қатысамын.
+    </p>
+
+    <h3>Негізгі міндеттерім</h3>
+    <ul>
+      <li>
+        Құрылыс нысандарына арналған экологиялық
+        жобалау құжаттамаларын әзірлеуге қатысу.
+      </li>
+      <li>
+        Экологиялық сараптама қорытындысын алу
+        процесін құжаттамалық сүйемелдеу.
+      </li>
+      <li>
+        Мемлекеттік сараптама барысында туындайтын
+        санитариялық-эпидемиологиялық талаптарға
+        қатысты мәселелерді қарастыру.
+      </li>
+      <li>
+        Сараптама ескертулерін талдау және
+        оларға жауап дайындауға қатысу.
+      </li>
+      <li>
+        Қоршаған ортаға әсер ететін факторларды
+        талдау және есептік материалдармен жұмыс.
+      </li>
+      <li>
+        Жобалық материалдарға қажетті
+        картографиялық ақпаратты дайындау.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills" class="container">
+  <h2 class="section-title">Кәсіби және техникалық дағдылар</h2>
+
+  <div class="grid">
+    <div class="skill">
+      <h3>🗺️ ArcGIS</h3>
+      <p>
+        Тақырыптық карталар құрастыру,
+        кеңістіктік талдау, геодеректерді
+        өңдеу және картографиялық визуализация.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>🌍 QGIS</h3>
+      <p>
+        Векторлық және растрлық деректермен жұмыс,
+        геоақпараттық талдау және карталарды безендіру.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>🛰️ Google Earth Engine</h3>
+      <p>
+        Спутниктік деректерді өңдеу,
+        NDVI және басқа спектрлік индекстерді
+        есептеу, аумақтық өзгерістерді талдау.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>🌱 Экологиялық жобалау</h3>
+      <p>
+        Экологиялық құжаттамалармен жұмыс,
+        сараптама рәсімдерін сүйемелдеу,
+        қоршаған ортаға әсерді талдау.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>📊 Деректерді талдау</h3>
+      <p>
+        Географиялық және экологиялық
+        көрсеткіштерді жүйелеу, кестелер,
+        диаграммалар мен есептер дайындау.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>💻 Microsoft Office</h3>
+      <p>
+        Word, Excel және PowerPoint
+        бағдарламаларында кәсіби құжаттар,
+        есептер мен презентациялар әзірлеу.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Ғылыми қызығушылықтарым</h2>
+  <div class="card">
+    <ul>
+      <li>Геоақпараттық жүйелер және цифрлық картография</li>
+      <li>Қашықтан зондтау және спутниктік мониторинг</li>
+      <li>Ландшафттық және геоэкологиялық зерттеулер</li>
+      <li>Табиғи ресурстарды тиімді пайдалану</li>
+      <li>Қоршаған ортаның экологиялық жағдайын бағалау</li>
+      <li>Топонимика және географиялық атауларды зерттеу</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Кәсіби мақсатым</h2>
+  <div class="highlight">
+    Экологиялық жобалау, географиялық зерттеулер
+    және геоақпараттық технологиялар саласындағы
+    кәсіби құзыреттілігімді үздіксіз жетілдіру.
+    Ғылыми білім мен практикалық тәжірибені
+    біріктіре отырып, қоршаған ортаны қорғау,
+    экологиялық қауіпсіздік және аумақтарды
+    тұрақты дамыту бағытында тиімді шешімдер
+    әзірлеуге үлес қосу.
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2 class="section-title">Байланыс</h2>
+  <div class="card">
+    <p>📍 Астана қаласы, Қазақстан</p>
+    <p>
+      🎓 Л.Н. Гумилев атындағы
+      Еуразия ұлттық университеті
+    </p>
+    <p>
+      💼 Эколог-жобалаушы · GIS
+    </p>
+    <p>
+      🌐 GitHub:
+      <a href="https://github.com/gappasaruzhan9"
+         target="_blank" rel="noopener noreferrer">
+        gappasaruzhan9
+      </a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>Ғаппас Аружан Ғабдулмұталапқызы</strong>
+  <p>Экология · География · GIS</p>
+  <p>© 2026 Жеке портфолио</p>
+</footer>
+
+</body>
+</html>
